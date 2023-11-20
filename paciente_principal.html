@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>GestaoSaude</title>
+    <link rel="stylesheet" type="text/css" href="styles/principal_paciente.css">
+    <script src="javascript/menu_lateral.js"></script>
+</head>
+<body>
+    <section class="logo">
+        <div class="cabecalho">
+            <a class="nome_azul" href="principal_paciente.php">Gestão</a><a class="nome_branco" href="principal_paciente.php">Saúde</a>
+        </div>
+    </section>
+    
+<section class="menu_principal">
+
+    <div class="sidebar">
+
+        <div class="sidebar-item" data-content="editar_perfil">Editar Perfil</div>
+        <div class="sidebar-item" data-content="cadastrar">Buscar Especialista</div>
+        <div class="sidebar-item" data-content="consultas">Minhas Consultas</div>
+    
+    </div>
+
+    <div class="content">
+
+        <div id="editar_perfil" class="content-item">
+            <a class="consultas" href="<?= $BASE_URL ?>./edit_profile_paciente.php">Editar Perfil</a>
+        </div>
+
+        <div id="cadastrar" class="content-item">
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar Especialista...">
+                <select id="filter-select">
+                    <option value="Todos">Filtros</option>
+                    <option value="Melhores_precos">Melhores Preços</option>
+                    <option value="Mais_proximos">Mais próximos</option>
+                
+                </select>
+                <button onclick="performSearch()" class="button">Buscar</button>
+            </div>
+            <div id="search-results">
+                <!-- Os resultados da pesquisa serão exibidos aqui -->
+            </div>
+
+        </div>
+
+        <div id="consultas" class="content-item">
+            <div class="consultas">Informações sobre Minhas Consultas</div>
+        </div>
+
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+</html>

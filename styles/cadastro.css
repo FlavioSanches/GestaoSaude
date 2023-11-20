@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.two_colors {
+    font-size: 36px;
+    background: linear-gradient(to right,#041C9B 53%,white 47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.logo {
+    background-color: #55AAE7;
+    padding: 1%;
+    text-align: center;
+}
+
+.bloco_principal {
+    width: 50%;
+    border: solid black 1px;
+    margin: 8% 25%;
+}
+
+.cadastro-container {
+    background-color: #fff;
+    padding: 10% 15%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.button_voltar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none; 
+    display: inline-block;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.button_opcoes {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none; 
+    display: inline-block;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
